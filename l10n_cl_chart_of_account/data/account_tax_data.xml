@@ -244,8 +244,8 @@
 
     <record id="iva_activo_fijo" model="account.tax.template">
       <field name="chart_template_id" ref="cl_chart_template_sii"/>
-      <field name="name">Activo Fijo</field>
-      <field name="description">19%</field>
+      <field name="name">IVA 19% Activo Fijo</field>
+      <field name="description">Activo Fijo 19%</field>
       <field name="amount">19</field>
       <field name="sii_code">14</field>
       <field name="amount_type">percent</field>
