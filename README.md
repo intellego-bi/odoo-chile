@@ -16,13 +16,13 @@ Este proyecto es un compendio de addons desarrollado por la comunadad Open-sourc
 
 Los componentes fueron tomados de los siguientes repositorios:
 
-Actualización de Tipos de Cambio y T/C Inverso:
+- Actualización de Tipos de Cambio y T/C Inverso:
 git@github.com:OCA/currency.git#11.0
 
-Facturación Electrónica:
+- Facturación Electrónica:
 git@github.com:odoocoop/facturacion_electronica.git#11.0
 
-Nómina Chile:
+- Nómina Chile:
 git@github.com:KonosCL/addons-konos.git#11.0
 
 
