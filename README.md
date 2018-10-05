@@ -7,6 +7,7 @@ Compendio de add-ons para la localización chilena de Odoo. Elementos contemplad
 - Indicadores de Impuestos SII
 - Factura Electrónica SII
 - Cesión de Créditos SII
+- Moneda CLP (Tipo de Cambio Inverso, por ejemplo: 650 CLP por USD)
 - Monedas Chile (UF y UTM)
 - Actualización de Tipos de Cambio con API SBIF Chile (USD, EUR, UF y UTM)
 - Nómina de Remuneraciones según Código del Trabajo de Chile
