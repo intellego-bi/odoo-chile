@@ -1,0 +1,4 @@
+lxml
+requests
+xmltodict
+num2words
