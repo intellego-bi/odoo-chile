@@ -1,5 +1,5 @@
 "id","code","name","abreviatura","rounding","position","symbol"
-"base.ARS",20,"ARS A","PESO",0.0001,,"$"
+"base.ARS",20,"ARS","PESO",0.0001,,"$"
 "base.BOB",63,"BOB","BOLIVIANO",0.0001,,"Bs."
 "base.BRL",7,"BRL","CRUZEIRO REAL",0.0001,,"R$"
 "base.CAD",5,"CAD","DOLAR CAN",0.0001,,"$"
