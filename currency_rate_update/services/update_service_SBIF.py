@@ -32,7 +32,7 @@ class SBIFGetter(CurrencyGetterInterface):
     """
     code = 'SBIF'
     name = 'SBIF Chile'
-    supported_currency_array = ["USD", "EUR", "CUF"]
+    supported_currency_array = ["USD", "EUR", "UF", "UTM"]
 
     el1 = ''
     el2 = ''
@@ -56,11 +56,15 @@ class SBIFGetter(CurrencyGetterInterface):
            el2 = '''Dolar'''
 
 
-        if curr == 'CUF':
+        if curr == 'UF':
            sbifurl = 'https://api.sbif.cl/api-sbifv3/recursos_api/uf/?apikey=' + apikey + '&formato=xml'
            el1 = '''UFs'''
            el2 = '''UF'''
 
+        if curr == 'UTM':
+           sbifurl = 'https://api.sbif.cl/api-sbifv3/recursos_api/utm/?apikey=' + apikey + '&formato=xml'
+           el1 = '''UTMs'''
+           el2 = '''UTM'''
 
         if curr == 'EUR':
            sbifurl = 'https://api.sbif.cl/api-sbifv3/recursos_api/euro/?apikey=' + apikey + '&formato=xml'
@@ -83,10 +87,6 @@ class SBIFGetter(CurrencyGetterInterface):
                              max_delta_days):
         """implementation of abstract method of Curreny_getter_interface"""
         url = 'http://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml'
-        # Important : as explained on the ECB web site, the currencies are
-        # at the beginning of the afternoon ; so, until 3 p.m. Paris time
-        # the currency rates are the ones of trading day N-1
-        # http://www.ecb.europa.eu/stats/exchange/eurofxref/html/index.en.html
 
         # We do not want to update the main currency
         if main_currency in currency_array:
