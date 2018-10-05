@@ -14,10 +14,22 @@ Compendio de add-ons para la localización chilena de Odoo. Elementos contemplad
 
 Este proyecto es un compendio de addons desarrollado por la comunadad Open-source de Odoo. La idea es generar un repositorio completo que pueda ser instalable en la versiòn 11 de Odoo (Enterprise).
 
+Los componentes fueron tomados de los siguientes repositorios:
+
+Actualización de Tipos de Cambio y T/C Inverso:
+git@github.com:OCA/currency.git#11.0
+
+Facturación Electrónica:
+git@github.com:odoocoop/facturacion_electronica.git#11.0
+
+Nómina Chile:
+git@github.com:KonosCL/addons-konos.git#11.0
+
+
 Correcciones realizadas:
 
-- Se han corregido algunos errores de dependencias Python que impedían las instalación en la versión 11.0 (ver archivo requirements.txt). 
+- El módulo "currency_rate_update" se ha ampliado para incluir la actualización de los tipos de cambio para USD, EUR, UF y UTM a partir del API provista por la SBIF (https://api.sbif.cl). Se crean las monedas UF y UTM en la instalación.
 
-- Errores que impedían la instalación del add-on para factura electrónica.
+- Se han corregido algunos errores de dependencias Python que impedían las instalación de los componentes de Factura Electrónica en la versión 11.0 (ver archivo requirements.txt). 
 
-- El módulo "currency_rate_update" se ha ampliado para incluir la actualización de los tipos de cambio para USD, EUR, UF y UTM a partir del API provista por la SBIF (https://api.sbif.cl). Se deben crear las monedas UF y UTM en la instalación de Odoo.
+- Error en archivo de monedas que impedían la instalación del add-on para factura electrónica (archivo res_currency.csv).
