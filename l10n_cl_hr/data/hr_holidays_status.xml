@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>						
+<odoo>						
+    <data>						
+
+
+     <!-- Tipos de Faltas -->
+     <!-- Caso is continued cuenta los fines de semana -->
+        <record id="hr_holidays_status_licencia" model="hr.holidays.status">
+            <field name="name">LICENCIA</field>
+            <field name="limit">True</field>
+            <field name="is_continued">True</field>
+        </record>
+
+        <record id="hr_holidays_sin_pago" model="hr.holidays.status">
+            <field name="name">FALTA</field>
+            <field name="limit">True</field>
+        </record>
+
+
+    </data>
+</odoo>                     
