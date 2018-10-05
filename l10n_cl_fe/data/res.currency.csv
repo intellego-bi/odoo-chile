@@ -27,4 +27,6 @@
 "base.AED",131,"AED","DIRHAM",0.0001,,"د.إ"
 "base.EUR",1,"EUR","EURO",0.0001,,"€"
 "base.CLP",46,"CLP","PESO CL",1,"before","$"
-"base.OTR",900,"OTR","OTRAS NO ESPECIFICADAS",0.0001,,"N/A"
+"base.UF",200,"UF","UF",0.01,"before","UF"
+"base.UTM",201,"UTM","UTM",0.01,"before","UTM"
+"base.OTR",900,"OTR","OTRAS NO ESPECIFICADAS",0.0001,,"NA"
