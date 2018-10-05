@@ -15,6 +15,8 @@ _logger = logging.getLogger(__name__)
 import requests
 import xmltodict as xm
 
+# Se debe solicitar un API KEY para cada empresa en el sitio de SBIF
+# https://api.sbif.cl/uso-de-api-key.html
 apikey = 'e96f651e08214ed0060771f21d11cdeb3b8b3305'
 sbifurl = 'https://api.sbif.cl/api-sbifv3/recursos_api/dolar/?apikey=' + apikey + '&formato=xml'
 rep = requests.get(sbifurl, allow_redirects=True)
