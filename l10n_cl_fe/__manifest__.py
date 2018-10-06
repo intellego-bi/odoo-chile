@@ -15,7 +15,7 @@ Facturación Electrónica para Chile.
     'depends': [
             'base',
             'account',
-            'report_xlsx',
+            #'report_xlsx',
             'account_invoicing',
             'purchase',
             'sale_management',
