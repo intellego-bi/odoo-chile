@@ -15,11 +15,11 @@ Facturación Electrónica para Chile.
     'depends': [
             'base',
             'account',
+            'report_xlsx',
             'account_invoicing',
             'purchase',
             'sale_management',
             'l10n_cl_chart_of_account',
-            'report_xlsx',
             'contacts',
         ],
     'external_dependencies': {
