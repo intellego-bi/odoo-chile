@@ -30,7 +30,7 @@ class HrEmployeeContract(models.Model):
     shift_schedule = fields.One2many('hr.shift.schedule', 'rel_hr_schedule', string="Shift Schedule")
     working_hours = fields.Many2one('resource.calendar', string='Working Schedule')
     department_id = fields.Many2one('hr.department', string="Department",
-                                    required=True)
+                                    required=False)
 
 
 class HrSchedule(models.Model):
@@ -39,7 +39,7 @@ class HrSchedule(models.Model):
     start_date = fields.Date(string="Date From", required=True)
     end_date = fields.Date(string="Date To", required=True)
     rel_hr_schedule = fields.Many2one('hr.contract')
-    hr_shift = fields.Many2one('resource.calendar', string="Shift", required=True)
+    hr_shift = fields.Many2one('resource.calendar', string="Shift", required=False)
 
     @api.onchange('start_date', 'end_date')
     def get_department(self):
