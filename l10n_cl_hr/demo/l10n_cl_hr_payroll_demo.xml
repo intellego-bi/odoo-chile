@@ -17,6 +17,7 @@
             <field name="name">00001</field>
             <field name="employee_id" ref="hr_employee_data_demo"/>
             <field name="type_id"     ref="hr_contract_type_not_defined"/>
+			<field name="department_id">1</field>
             <field name="date_start">2016-01-01</field>
             <field name="wage">1085000</field>
             <field name="colacion">60000</field>
