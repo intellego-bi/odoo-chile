@@ -17,7 +17,7 @@ basado en plan de cuentas del Servicio de Impuestos Internos
     'website': 'http://www.konos.cl',
     'category': 'Localization/Chile',    
     'license': 'AGPL-3',
-    'depends': ['account'],
+    'depends': ['account', 'account_accountant', 'documents', 'purchase', 'stock', 'maintenance', 'sale_management', 'mrp', 'mrp_plm', 'mrp_mps', 'mrp_workorder', 'quality_control', 'fleet', 'web_studio'],
     'data': [
             'views/account_tax.xml',
             'data/l10n_cl_chart_of_account_data.xml',
